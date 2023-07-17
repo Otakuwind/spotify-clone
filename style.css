@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.logo{
+    margin-left: 80px;
+}
+/* Style the navigation bar links */
+.navbar a {
+  float:inline-end;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+
+
+/*footer*/
+
+
+.footer{
+  background-color: rgb(34, 34, 34);
+color: rgb(148, 148, 148);
+font-family: "Amazon Ember";
+padding: 24px;
+text-align: center;
+line-height: 20px;
+}
+.footer-links{
+  margin: 0;
+padding: 0;
+font-size: 15px;
+line-height: 19px;
+color: #949494;
+font-family: "Amazon Ember";
+text-align: center;
+text-rendering: optimizeLegibility;
+}
+.Footer__copyright{
+  color: #949494;
+  font-family: "Amazon Ember";
+padding: 24px;
+text-align: center;
+font-size: 15px;
+text-rendering: optimizeLegibility;
+line-height: 20px;
+margin-top: 0px;
+}
