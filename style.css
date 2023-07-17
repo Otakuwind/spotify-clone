@@ -5,15 +5,35 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  
 }
+
+
+.navbar{
+    background-color: rgb(0, 0, 0);
+     color: white;
+    
+}
+ .nav-item > a {
+    color: white; /* Set the text color to white */
+  }
 
 /* Style the header */
 .header {
-  padding: 80px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
+    overflow: hidden;
+  width: 100%;
+  min-height: 450px;
+  padding: 0px;
+  background-attachment: scroll, scroll;
+  background-image: url(images/bubbles-removebg-preview.png), linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166));
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+  background-color: rgb(108, 14, 224);
+  
+  background-position: center center;
+  background-repeat: no-repeat;
 }
+
 
 /* Increase the font size of the h1 element */
 .header h1 {
