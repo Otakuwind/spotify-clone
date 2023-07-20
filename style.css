@@ -11,6 +11,7 @@ body {
   margin: 0;
     padding: 0;
     background-color: white;
+    height: 100%;
 }
 
 
@@ -149,6 +150,50 @@ line-height: 1.25rem;
 font-weight: 400;
 color: inherit;
 text-align: center;
+}
+
+
+
+
+.fc1{
+    display: none;
+}
+.f1 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+
+
+/* Clear floats after the columns */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+}
+
+.free{
+    background-image: linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166)); 
+    min-height: 450px;
+}
+
+
+
+
+.f1p{
+color: white;
+font-size: 40px;
+font-weight: 900;
+letter-spacing: -0.02em;
+line-height: 1.2;
+padding: 0px 15px 80px;
+display: block;
+  margin-top: 90px;
+text-align: center;
+
 }
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
