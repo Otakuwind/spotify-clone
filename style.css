@@ -10,6 +10,7 @@ body {
   width:100%;
   margin: 0;
     padding: 0;
+    background-color: white;
 }
 
 
@@ -82,12 +83,91 @@ padding-bottom: 32px;
 
 }
 
+.why-h2{
+    max-width: 670px;
+margin-left: auto;
+margin-right: auto;
+margin-block: 0px;
+font-size: 28px;
+line-height: 32px;
+letter-spacing: -0.015em;
+font-weight: 900;
+padding: 0px;
+text-align: center;
+}
+
+.r{
+  font-family: "Amazon Ember Light" !important;
+  font-size: 15px;
+  height: auto;
+  display: block;
+min-height: 47vh;
+margin: 0;
+text-rendering: optimizeLegibility;
+
+}
+.c {
+  float: left;
+  height: 100%;
+  width: 25%;
+  color: black;
+  padding: 10px;
+  height: 300px; 
+ 
+  
+  /* Should be removed. Only for demonstration */
+}
+
+.c >h2{
+    color: black;
+    margin-bottom: 4px;
+    display: inline-block;
+width: 100%;
+-moz-box-flex: 1;
+flex-grow: 1;
+margin: 16px 0px;
+}
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column1 {
     width: 100%;
     margin-top: -90px;
   }
+
+  .c{
+width: 100%;
+display: flex;
+flex-direction: column;
+font-size: small;
+
+}
+
+.c> img{
+vertical-align: top;
+max-width: 40%;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 90px;
+}
+
+.r{
+  margin-top: 50px;
+}
+.great-ent{
+display: table;
+
+}
+.wai{  
+display:flex;
+flex-direction: left;
+position: center top;
+margin-right: 20px;
+-moz-box-flex: 1;
+flex-grow: 1;
+width: 142px;
+height: 142px;
+}
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
