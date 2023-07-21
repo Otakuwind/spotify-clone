@@ -242,21 +242,42 @@ height: 142px;
 
 
 /*******************Accordion*************/
+article{
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.accordion-title{
+      margin-block: 0px;
+  font-size: 28px;
+  line-height:32px;
+  letter-spacing: -0.015em;
+  font-weight: 900;
+  padding: 0px;
+font-family:Helvetica,Arial,sans-serif;
+text-align: center;
+}
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: rgb(255, 255, 255);
+  color: black;
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border: none;
+  border:#949494;
   text-align: left;
   outline: none;
   font-size: 15px;
   transition: 0.4s;
+ 
+    padding: 30px;
 }
 
 .active, .accordion:hover {
-  background-color: #ccc; 
+  background-color: rgb(248, 248, 248); 
 }
 
 .panel {
@@ -264,6 +285,8 @@ height: 142px;
   display: none;
   background-color: white;
   overflow: hidden;
+
+  
 }
 
 
